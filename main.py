@@ -41,7 +41,7 @@ def main():
         with st.spinner("Đang thực hiện load Model..."):
             model = load_model("xception.h5", compile=False)
             isLoaded = True
-            pixels = 299
+            pixels = 224
     elif choice == "Model TeachableMachine":
         st.subheader("Model sử dụng Teachable Machine")
         st.write("Model Teachable Machine: Sử dụng dụng mô hình của teachable machine để dự đoán")
